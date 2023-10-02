@@ -500,7 +500,7 @@ window.addEventListener('keyup', (e) => {
 onload = async () => {
     document.documentElement.className = "darkTheme";
 
-    fullJson = await fetch('/data/array.json')
+    fullJson = await fetch('./data/array.json')
         .then(res => res.json());
 
     handleNewJson(fullJson);
