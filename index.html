@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON Viewer</title>
+
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet">
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/regular.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="app">
+    <div id="toolbar">
+      <div id="toolbarLeft">
+
+        <button id="toggleCollapseAllBtn">
+          <i class="fa-regular fa-square-minus" id="collapseAllIcon"></i>
+          <i class="fa-regular fa-square-plus" id="expandAllIcon"></i>
+        </button>
+
+        <input type="text" id="filterInput" class="toolbarInput" placeholder="filter" />
+
+        <button id="toggleJsonViewBtn">
+          <i class="fa-solid fa-code"></i>
+          <div class="hoverBubble">
+            <div class="hoverBubblePoint"></div>
+            <div>
+              View Raw
+            </div>
+          </div>
+        </button>
+
+        <div id="themeBtn">
+          <i class="fa-solid fa-sun sunIcon"></i>
+          <i class="fa-solid fa-moon moonIcon"></i>
+        </div>
+      </div>
+
+
+      <div id="toolbarRight">
+        <input type="text" id="jsonUrl" class="toolbarInput" placeholder="Load from URL" />
+
+        <button id="loadJsonUrl">
+          <i class="fa-solid fa-plus"></i>
+          <div class="hoverBubble">
+            <div class="hoverBubblePoint"></div>
+            <div>
+              Add JSON
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div id="objectViewer"></div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
