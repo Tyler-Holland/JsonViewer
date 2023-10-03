@@ -397,6 +397,8 @@ function handleNewJson(json) {
     objectViewer.appendChild(rawJson);
 
     displayRawJson(json);
+
+    appState.showRawJson = appState.showRawJson;
 }
 
 function isValidHttpUrl(string) {
@@ -498,7 +500,7 @@ window.addEventListener('keyup', (e) => {
 });
 
 onload = async () => {
-    document.documentElement.className = "darkTheme";
+    document.documentElement.className = "lightTheme";
 
     fullJson = await fetch('/data/array.json')
     .then(res => res.json());

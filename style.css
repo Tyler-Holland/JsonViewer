@@ -1,7 +1,7 @@
 :root {
     font-family: monospace, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-    --indent-distance: 36px;
+    --indent-distance: 32px;
 }
 
 :root.lightTheme {
@@ -67,7 +67,6 @@ body {
     padding: 32px;
     width: 800px;
     min-height: 100vh;
-    box-sizing: border-box;
     margin: 0 auto;
 }
 
