@@ -351,6 +351,7 @@ input:disabled {
 
 .rawString {
     color: #ffcc99;
+    overflow-wrap: anywhere;
 }
 
 .rawNull {
